@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true,update_synch=true" db_object_id="2358fe3b83b743101197cc65eeaad3d3" extends="sys_metadata" label="Persona" max_length="40" name="x_312586_data_ge_0_persona" type="collection">
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element label="Key" max_length="40" name="key" type="string"/>
+        <element choice="1" label="Persona type" max_length="40" name="persona_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Integration" sequence="4" value="integration"/>
+                <element inactive_on_update="false" label="Executive" sequence="0" value="executive"/>
+                <element inactive_on_update="false" label="Consumer" sequence="3" value="consumer"/>
+                <element inactive_on_update="false" label="Seasonal" sequence="2" value="seasonal"/>
+                <element inactive_on_update="false" label="Employee" sequence="1" value="employee"/>
+            </choice>
+        </element>
+        <element label="Department" max_length="32" name="department" reference="x_312586_data_ge_0_department" type="reference"/>
+        <element label="Manager" max_length="32" name="manager" reference="x_312586_data_ge_0_persona" type="reference"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="manager"/>
+        </index>
+    </element>
+</database>

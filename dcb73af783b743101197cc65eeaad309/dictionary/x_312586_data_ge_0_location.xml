@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true,update_synch=true" db_object_id="f9ec3b80838cd3101197cc65eeaad32d" extends="sys_metadata" label="Location" max_length="40" name="x_312586_data_ge_0_location" type="collection"/>
+</database>

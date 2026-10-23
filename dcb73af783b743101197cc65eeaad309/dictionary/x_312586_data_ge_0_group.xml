@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true,update_synch=true" db_object_id="94408c58838cd3101197cc65eeaad35f" extends="sys_metadata" label="Group" max_length="40" name="x_312586_data_ge_0_group" type="collection"/>
+</database>
